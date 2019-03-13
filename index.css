@@ -1,0 +1,164 @@
+div.one{
+    height: 50px;
+    width: 50px;
+    background-color: green;
+    animation-name: one;
+    animation-duration: 5s;
+    position: relative;
+    animation-direction: normal;
+   
+    
+}
+@keyframes one {
+   from{transform: translate(0px,0px);background-color: }
+   to{transform: translate(150px,150px);background-color: blue}
+}
+div.two{
+    height: 50px;
+    width: 50px;
+    animation: two 2s normal;
+    position: relative;
+}
+.menu{
+    width: 100%;
+    height: 100px;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: menubar;
+    animation-duration: 4s;
+    position: relative;
+    animation-fill-mode: forwards;
+}
+@keyframes menubar{
+    0%{
+        background-color: gray
+    }
+    100%{
+      background-color: white
+    }
+}
+nav{
+    height: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 317px;
+    height: 100%;
+    background-color: red;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+ 
+ 
+    border: 1px solid white;
+    
+}
+nav a:first-child{
+    background-color: gold;
+    animation-name: menu;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+    
+}
+@keyframes menu{
+    0%{transform: translate(0px,0px)}
+    80%{transform: translate(0px,300px);}
+    100%{transform:translate(-40px,350px) rotate(60deg)}
+}
+nav a:nth-child(2){
+    animation-name: news;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+@keyframes news{
+    0%{transform: translate(0px,0px)}
+    70%{transform: translate(-100px,300px);}
+    100%{transform:translate(-100px,420px) rotate(20deg) }
+}
+nav a:nth-child(3){
+    animation-name: contact;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+@keyframes contact{
+    0%{transform: translate(0px,0px)}
+    90%{transform: translate(-130px,350px);}
+    100%{transform:translate(-150px,365px)rotate(4deg)}
+}
+nav a:nth-child(4){
+    animation-name: about;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+@keyframes about{
+    0%{transform: translate(0px,0px)}
+    100%{transform: translate(-170px,480px);}
+    
+}
+nav a:nth-child(5){
+    animation-name: home;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+@keyframes home{
+    0%{transform: translate(0px,0px)}
+    100%{transform: translate(-200px,420px) rotate(20deg)}
+    
+}
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border: 1px hidden ;
+    border-radius: 100%;
+    background-color: red;
+    animation-name:one;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+}
+@keyframes one{
+    25%{transform: scale(0.3,0.3);background-color:rgba(255, 217, 0, 0.548) }
+    50%{transform: scale(0.8,0.8);background-color: rgb(255, 217, 0)}
+    75%{transform: scale(0.5,0.5);background-color: rgb(255, 153, 0)}
+    100%{transform: scale(1.2,1.2);background-color: rgba(255, 72, 0, 0.966)}
+}
+.circle div:first-child{
+    height: 40px;
+    width: 40px;
+    border: 1px hidden ;
+    border-radius: 100%;
+    background-color:orange;
+    animation-name:two;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+}
+@keyframes two{
+    
+    25%{transform: scale(0.3,0.3);background-color:rgba(255, 217, 0, 0.548) }
+    50%{transform: scale(1.2,1.2);background-color:rgb(255, 187, 0) }
+    75%{transform: scale(1.5,1.5);background-color: rgb(255, 72, 0)}
+    100%{transform: scale(1.8,1.8);background-color: rgb(255, 230, 0)}
+}
